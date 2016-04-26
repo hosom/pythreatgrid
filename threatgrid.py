@@ -129,6 +129,11 @@ def search_samples(options):
 	for request in make_request('/samples/search', options):
 		yield request
 
+def samples(options):
+	
+	for request in make_request('/samples', options):
+		yield request
+
 def ips(options):
 	
 	for request in make_request('/iocs/feeds/ips', options):
