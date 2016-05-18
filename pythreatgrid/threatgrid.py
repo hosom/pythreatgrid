@@ -14,9 +14,6 @@ requests.packages.urllib3.disable_warnings()
 ## Check and verify the version of requests in use. This code is only
 ## tested and verified with requests 2.9 and greater
 
-if not float('.'.join(requests.__version__.split('.')[0:2])) >= 2.9:
-	sys.exit('python requests > 2.9 is a requirement!')
-
 _HOST = 'https://panacea.threatgrid.com'
 '''str: Represents the host that the API will connect to.
 '''
