@@ -110,7 +110,7 @@ def get_report(options, sample_id, blocksize=1024):
 		yield block
 
 def get_sample(options, sample_id, blocksize=1024):
-	r = requests.get('%s/sample/%s/sample.zip' % (_URL, sample_id),
+	r = requests.get('%s/samples/%s/sample.zip' % (_URL, sample_id),
 		data=options)
 	for block in r.iter_content(blocksize):
 		yield block
